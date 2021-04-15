@@ -10,30 +10,53 @@
     //zxcxzxcasdasdqwe
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F44336"
-        android:text="Tarik Tunai"
-        app:iconTint="#F44336"
-        app:rippleColor="#F44336"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="441dp" />
-
-    <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#F44336"
         android:text="Tagihan"
+        android:textAlignment="center"
+        android:textSize="12sp"
         app:iconTint="#F44336"
-        app:rippleColor="#F44336"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:rippleColor="#F44336" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:text="Pulsa"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:iconTint="#F44336"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:rippleColor="#F44336" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F44336"
+        android:text="Tarik Tunai"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:iconTint="#F44336"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:rippleColor="#F44336" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
         android:background="#F44336"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,161 +64,245 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:foregroundTint="#F6F0F0"
-        android:text="PayMe"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#F44336"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="8dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/pngwing_com"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="5dp" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngwing_com" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="30"
-        app:srcCompat="@drawable/ktmn7fh_search_icon_white_one_clipart"
-        tools:layout_editor_absoluteX="375dp"
-        tools:layout_editor_absoluteY="8dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ktmn7fh_search_icon_white_one_clipart" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="32"
-        android:layout_height="32"
-        app:srcCompat="@drawable/g3iukkmho5lsc3nml7ob0dl3ud"
-        tools:layout_editor_absoluteX="336dp"
-        tools:layout_editor_absoluteY="8dp" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/g3iukkmho5lsc3nml7ob0dl3ud" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="67dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ikhsan Andika Putra"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="209dp" />
+        android:layout_marginTop="10dp"
+        android:text="Cecep Yanto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="69dp"
-        android:layout_height="41dp"
-        android:text="Rp 0"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="235dp" />
+        android:layout_width="85dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:text="Rp 15.000"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Favourite"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Promo"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Activity"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Menu"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="108dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/btn_star"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="634dp" />
+        tools:layout_editor_absoluteY="620dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/star_big_on"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="634dp" />
+        tools:layout_editor_absoluteY="620dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="57dp"
-        android:layout_height="52dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:srcCompat="@android:drawable/stat_notify_chat"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="634dp" />
+        tools:layout_editor_absoluteY="620dp" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:srcCompat="@android:drawable/ic_dialog_dialer"
-        tools:layout_editor_absoluteX="324dp"
-        tools:layout_editor_absoluteY="633dp" />
+        tools:layout_editor_absoluteY="620dp" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="68dp"
-        android:layout_height="75dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="15dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pngegg"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="351dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F44336"
-        android:text="Pulsa"
-        app:iconTint="#F44336"
-        app:rippleColor="#F44336"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="441dp" />
+        tools:layout_editor_absoluteY="352dp" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="97dp"
-        android:layout_height="74dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:srcCompat="@android:drawable/ic_menu_agenda"
-        tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="352dp" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="83dp"
-        android:layout_height="75dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00BCD4"
+        app:layout_constraintDimensionRatio="12:12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:srcCompat="@android:drawable/ic_popup_sync"
-        tools:layout_editor_absoluteX="297dp"
         tools:layout_editor_absoluteY="351dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="PayMe"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
