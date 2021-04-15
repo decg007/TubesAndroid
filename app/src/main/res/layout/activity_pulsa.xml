@@ -124,70 +124,70 @@
         app:layout_constraintTop_toBottomOf="@+id/textView19"
         app:srcCompat="@drawable/xl" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
-        android:text="Rp. 25.000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
-
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="15dp"
-        android:text="Rp. 50.000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
-
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="15dp"
-        android:text="Rp. 100.000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton8"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
-
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="30dp"
-        android:text="Rp. 75.000"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton7"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
-        android:backgroundTint="#F44336"
-        android:text="Continue"
-        android:textAlignment="center"
-        android:textSize="18sp"
+    <RadioGroup
+        android:layout_width="308dp"
+        android:layout_height="381dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/limapuluh"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rp. 50.000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/duapuluhlima"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <RadioButton
+            android:id="@+id/duapuluhlima"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rp. 25.000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/limapuluh"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+        <RadioButton
+            android:id="@+id/tujuhpuluhlima"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rp. 75.000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/seratus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/duapuluhlima" />
+
+        <RadioButton
+            android:id="@+id/seratus"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rp. 100.000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tujuhpuluhlima"
+            app:layout_constraintTop_toBottomOf="@+id/limapuluh" />
+
+    </RadioGroup>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -198,5 +198,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/order" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

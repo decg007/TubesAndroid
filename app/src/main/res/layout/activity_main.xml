@@ -1,4 +1,4 @@
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -7,34 +7,34 @@
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
         tools:context=".MainActivity">
-    //zxcxzxcasdasdqwe
 
     <Button
         android:id="@+id/button5"
         android:layout_width="95dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#F44336"
-        android:text="Tagihan"
+        android:text="Bill"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:iconTint="#F44336"
         app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/credit"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:rippleColor="#F44336" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/credit"
         android:layout_width="95dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#F44336"
-        android:text="Pulsa"
+        android:text="Credit"
+        android:onClick="sendMessage"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:iconTint="#F44336"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintHorizontal_bias="0.5"
@@ -45,13 +45,13 @@
     <Button
         android:id="@+id/button6"
         android:layout_width="95dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:backgroundTint="#F44336"
-        android:text="Tarik Tunai"
+        android:text="Withdraw"
         android:textAlignment="center"
-        android:textSize="12sp"
+        android:textSize="10sp"
         app:iconTint="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
