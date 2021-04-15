@@ -9,6 +9,28 @@
         tools:context=".MainActivity">
     //zxcxzxcasdasdqwe
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Tarik Tunai"
+        app:iconTint="#F44336"
+        app:rippleColor="#F44336"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Tagihan"
+        app:iconTint="#F44336"
+        app:rippleColor="#F44336"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="441dp" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="411dp"
@@ -108,5 +130,72 @@
         android:text="Menu"
         tools:layout_editor_absoluteX="333dp"
         tools:layout_editor_absoluteY="696dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/star_big_on"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="68dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/pngegg"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Pulsa"
+        app:iconTint="#F44336"
+        app:rippleColor="#F44336"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="97dp"
+        android:layout_height="74dp"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="351dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
