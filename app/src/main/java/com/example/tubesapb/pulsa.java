@@ -2,6 +2,7 @@ package com.example.tubesapb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -23,11 +24,15 @@ public class pulsa extends AppCompatActivity {
                 if (checked)
                     break;
             case R.id.tujuhpuluhlima:
-                if (checked)
+               if (checked)
                     break;
             case R.id.seratus:
                 if (checked)
                     break;
         }
+    }
+    public void onClick(View view) {
+        Intent intent = new Intent(pulsa.this, Payment.class);
+        startActivity(intent);
     }
 }

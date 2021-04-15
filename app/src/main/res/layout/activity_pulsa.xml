@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".pulsa">
 
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
     <ImageView
         android:id="@+id/imageView26"
         android:layout_width="25dp"
@@ -18,18 +40,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_add" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="#F44336"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
@@ -60,7 +70,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/g3iukkmho5lsc3nml7ob0dl3ud" />
 
@@ -68,15 +78,17 @@
         android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="phone"
-        android:text="Masukkan no. telp"
         android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        tools:text="Phone Number" />
 
     <TextView
         android:id="@+id/textView19"
@@ -125,68 +137,55 @@
         app:srcCompat="@drawable/xl" />
 
     <RadioGroup
-        android:layout_width="308dp"
-        android:layout_height="381dp"
+        android:id="@+id/radioGroup"
+        android:layout_width="121dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="145dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent">
-
-        <RadioButton
-            android:id="@+id/limapuluh"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="15dp"
-            android:onClick="onRadioButtonClicked"
-            android:text="Rp. 50.000"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/duapuluhlima"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
         <RadioButton
             android:id="@+id/duapuluhlima"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="50dp"
             android:onClick="onRadioButtonClicked"
             android:text="Rp. 25.000"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@+id/limapuluh"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+        <RadioButton
+            android:id="@+id/limapuluh"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Rp. 50.000"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="483dp" />
 
         <RadioButton
             android:id="@+id/tujuhpuluhlima"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
             android:onClick="onRadioButtonClicked"
             android:text="Rp. 75.000"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@+id/seratus"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/duapuluhlima" />
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="420dp" />
 
         <RadioButton
             android:id="@+id/seratus"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="15dp"
             android:onClick="onRadioButtonClicked"
             android:text="Rp. 100.000"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/tujuhpuluhlima"
-            app:layout_constraintTop_toBottomOf="@+id/limapuluh" />
-
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="420dp" />
     </RadioGroup>
 
     <ImageView
@@ -206,6 +205,8 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
         android:clickable="true"
+        android:onClick="onClick"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/order" />
