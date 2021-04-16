@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //lifecycle
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
+        //explicit intent ke activity_pulsa
         Intent intent = new Intent(MainActivity.this, pulsa.class);
         startActivity(intent);
     }

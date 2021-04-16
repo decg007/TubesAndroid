@@ -2,7 +2,6 @@ package com.example.tubesapb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,20 +11,19 @@ public class login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //lifecycle
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-    public void onClickListen(View v) {
-        String[] phoneNumber;
-        if (!isValidMobile(phoneNumber[0])) {
-            Toast.makeText(getApplicationContext(), "Phone Number Invalid", Toast.LENGTH_SHORT).show();
-            return;
-        } else {
-            Intent intent = new Intent(login.this, MainActivity.class);
-            startActivity(intent);
-        }
+    public void displayToast(String message) {
+        //dialog
+        Toast.makeText(getApplicationContext(), message,
+                Toast.LENGTH_SHORT).show();
     }
-    private boolean isValidMobile(String phoneNumber) {
-        return android.util.Patterns.PHONE.matcher(phoneNumber).matches();
+    public void onClickListen(View view) {
+        //explicit intent ke activity_main
+        Intent intent = new Intent(login.this, MainActivity.class);
+        startActivity(intent);
+        displayToast(getString(R.string.Successful_message));
     }
 }

@@ -11,6 +11,7 @@ public class pulsa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //lifecycle
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pulsa);
     }
@@ -32,6 +33,7 @@ public class pulsa extends AppCompatActivity {
         }
     }
     public void onClick(View view) {
+        //explicit intent ke activity_payment
         Intent intent = new Intent(pulsa.this, Payment.class);
         startActivity(intent);
     }
