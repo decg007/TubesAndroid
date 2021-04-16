@@ -9,18 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TubesAPB">
-        <activity android:name=".Payment"></activity>
-        <activity android:name=".pulsa" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="Tubes" >
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Payment" />
+        <activity android:name=".pulsa" />
         <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
